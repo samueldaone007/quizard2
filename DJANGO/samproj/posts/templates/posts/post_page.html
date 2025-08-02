@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block title %}
+{{post.title}}
+{% endblock  %}
+
+{% block content %}
+<section clasd ='section'>
+    <h1 class = 'title'>{{post.title}}</h1>
+    <p class = 'date'>{{post.date}}</p>
+    <p class = 'body'>{{post.body}}</p>
+</section>
+{% endblock  %}

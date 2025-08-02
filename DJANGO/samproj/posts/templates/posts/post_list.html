@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block title %}
+Post list
+{% endblock %}
+
+{% block content %}
+<section class = 'section'>
+    {% for post in  posts%}
+    <article class = 'post'>
+        <h2><a href = "{%url 'posts:page' title=post.title%}">{{post.title}}</a></h2>
+        <p class = "date">{{post.date}}</p>
+        <p class = "body">{{post.body}}</p>
+    </article>
+    {% endfor %}
+</section>
+{% endblock content %}

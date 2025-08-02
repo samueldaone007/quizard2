@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block content %}
+<h1>Home Page</h1>
+<section>
+    {{post.title}}
+</section>
+<p>Go to my about page <a href="about/">About</a></p>
+{% endblock content %}
